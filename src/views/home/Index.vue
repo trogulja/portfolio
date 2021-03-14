@@ -9,7 +9,7 @@
   export default {
     name: 'Home',
 
-    metaInfo: { title: 'Home' },
+    metaInfo: { title: 'Full-Stack Developer' },
 
     extends: View,
 

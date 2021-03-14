@@ -24,24 +24,6 @@ const router = new Router({
           component: () => import('@/views/home/Index.vue'),
         },
         {
-          path: 'about',
-          name: 'About',
-          component: () => import('@/views/about/Index.vue'),
-          meta: { src: require('@/assets/about.jpg') },
-        },
-        {
-          path: 'contact-us',
-          name: 'Contact',
-          component: () => import('@/views/contact-us/Index.vue'),
-          meta: { src: require('@/assets/contact.jpg') },
-        },
-        {
-          path: 'pro',
-          name: 'Pro',
-          component: () => import('@/views/pro/Index.vue'),
-          meta: { src: require('@/assets/pro.jpg') },
-        },
-        {
           path: '*',
           name: 'FourOhFour',
           component: () => import('@/views/404/Index.vue'),

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "vue": "^2.6.11",
+    "vue-fullpage.js": "^0.1.7",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.3.4",
     "vuetify": "^2.3.6"

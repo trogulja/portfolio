@@ -4,3 +4,4 @@ import './base';
 import './meta';
 import './webfontloader';
 import './vueparticles';
+import './vuefullpage';

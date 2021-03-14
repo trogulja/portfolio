@@ -8,8 +8,8 @@
   export default {
     name: 'App',
     metaInfo: {
-      title: 'App',
-      titleTemplate: '%s | Tibor\'s portfolio',
+      title: 'Full-Stack Developer',
+      titleTemplate: 'Tibor Rogulja | %s',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },

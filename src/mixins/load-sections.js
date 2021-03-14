@@ -1,10 +1,7 @@
 // Utilities
-import {
-  camelCase,
-  upperFirst,
-} from 'lodash'
+import { camelCase, upperFirst } from 'lodash';
 
-export default function (sections = []) {
+export default function(sections = []) {
   return {
     name: 'LoadSections',
 
@@ -12,13 +9,13 @@ export default function (sections = []) {
     // and returns a function that returns a
     // Promise.
     components: sections.reduce((acc, cur) => {
-      const name = upperFirst(camelCase(cur))
+      const name = upperFirst(camelCase(cur));
 
-      acc[`Section${name}`] = () => import(`@/views/sections/${name}.vue`)
+      acc[`Section${name}`] = () => import(`@/views/sections/${name}.vue`);
 
-      return acc
+      return acc;
     }, {}),
 
-    data: () => ({ sections }),
-  }
+    data: () => ({ sections })
+  };
 }

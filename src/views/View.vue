@@ -13,16 +13,16 @@
 </template>
 
 <script>
-  export default {
-    name: 'BaseView',
+export default {
+  name: 'BaseView',
 
-    props: {
-      id: {
-        type: String,
-        default: 'view',
-      },
-    },
+  props: {
+    id: {
+      type: String,
+      default: 'view'
+    }
+  },
 
-    data: () => ({ sections: [] }),
-  }
+  data: () => ({ sections: [] })
+};
 </script>
