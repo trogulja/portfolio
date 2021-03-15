@@ -18,8 +18,8 @@
       click-mode="push"
     ></vue-particles>
     <full-page id="fullpage" ref="fullpage" :options="options">
-      <div class="section" id="first-section"></div>
-      <div class="section" id="second-section">Second section</div>
+      <div id="first-section" class="section"></div>
+      <div id="second-section" class="section">Second section</div>
     </full-page>
     <v-fade-transition mode="out-in">
       <!-- <router-view /> -->
