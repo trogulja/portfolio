@@ -9,6 +9,7 @@
     "postversion": "node scripts/postversion.js"
   },
   "dependencies": {
+    "particles.vue": "^2.5.1",
     "vue": "^2.6.11",
     "vue-fullpage.js": "^0.1.7",
     "vue-meta": "^2.4.0",
@@ -43,7 +44,6 @@
     "sass-loader": "^9.0.2",
     "shelljs": "^0.8.4",
     "vue-cli-plugin-vuetify": "^2.0.7",
-    "vue-particles": "^1.0.9",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.6.0",
     "webfontloader": "^1.6.28",

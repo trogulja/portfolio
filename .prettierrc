@@ -4,5 +4,6 @@
     "prettier": {
       "singleQuote": true
     }
-  }
+  },
+  "printWidth": 200
 }

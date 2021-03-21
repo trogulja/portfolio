@@ -4,6 +4,10 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import './plugins'
 
+// STYLES
+// Main Theme SCSS
+import './assets/scss/theme.scss'
+
 Vue.config.productionTip = false
 
 new Vue({

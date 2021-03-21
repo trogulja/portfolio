@@ -1,4 +1,4 @@
 import Vue from 'vue';
-import VueParticles from 'vue-particles';
+import Particles from 'particles.vue';
 
-Vue.use(VueParticles);
+Vue.use(Particles);
