@@ -18,3 +18,26 @@ yarn lint
 # build for production
 yarn build
 ```
+
+## ToDo
+- [ ] base
+  - [ ] bg image
+  - [x] particles
+- [ ] left side
+  - [ ] slide0 version
+  - [ ] slide+ version
+- [ ] right side
+  - [ ] about me / who am i
+  - [ ] contact
+    - [ ] google maps location
+  - [ ] projects
+    - [ ] Marvin
+    - [ ] SkillsPlatform
+    - [ ] Parserly
+    - [ ] Compiley
+    - [ ] FolderWatchNotify
+    - [ ] lePanel
+  - [ ] timeline portfolio
+    - [ ] color coded
+    - [ ] printable resume
+      - [ ] single html page
