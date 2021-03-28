@@ -79,5 +79,10 @@ h6 {
   background: linear-gradient(to right, $greenDark, $greenNormal);
 }
 
+.project-card .v-image {
+  // border-bottom: $blueNormal 5px solid;
+  background-color: #fff;
+}
+
 @import 'fullpage';
 @import 'asktoscroll';

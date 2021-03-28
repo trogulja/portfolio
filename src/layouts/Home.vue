@@ -26,10 +26,10 @@
               <v-spacer />
               <v-card color="transparent" elevation="0" dark>
                 <v-card-actions>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.linkedin.com/in/trogulja/" target="_blank"><v-icon dark>mdi-linkedin</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.facebook.com/tibor.rogulja" target="_blank"><v-icon dark>mdi-facebook</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://twitter.com/trogulja" target="_blank"><v-icon dark>mdi-twitter</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.instagram.com/thornycro/" target="_blank"><v-icon dark>mdi-instagram</v-icon></v-btn>
+                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.linkedin.com/in/trogulja/" target="_blank"><v-icon color="white">mdi-linkedin</v-icon></v-btn>
+                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.facebook.com/tibor.rogulja" target="_blank"><v-icon color="white">mdi-facebook</v-icon></v-btn>
+                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://twitter.com/trogulja" target="_blank"><v-icon color="white">mdi-twitter</v-icon></v-btn>
+                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.instagram.com/thornycro/" target="_blank"><v-icon color="white">mdi-instagram</v-icon></v-btn>
                   <v-spacer />
                 </v-card-actions>
               </v-card>
