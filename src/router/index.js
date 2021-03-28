@@ -1,8 +1,7 @@
-// Imports
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(Router)
+Vue.use(Router);
 
 const router = new Router({
   mode: 'history',
@@ -16,22 +15,21 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      component: () => import('@/layouts/home/Index.vue'),
+      component: () => import('@/layouts/Home.vue'),
       children: [
         {
           path: '',
           name: 'Home',
-          component: () => import('@/views/home/Index.vue'),
+          component: () => import('@/views/Home.vue'),
         },
         {
           path: '*',
           name: 'FourOhFour',
-          component: () => import('@/views/404/Index.vue'),
+          component: () => import('@/views/404.vue'),
         },
       ],
     },
-
   ],
-})
+});
 
-export default router
+export default router;

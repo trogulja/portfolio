@@ -1,55 +1,38 @@
 <template>
-  <base-section space="0" class="content-inside-section">
-    <div class="row row-no-margin">
-      <div class="left-center-text">
-        <div class="left-center-part">
-          <base-heading>Projects</base-heading>
-          <v-container>
-            <v-row dense>
-              <v-col cols="6">
-                <v-card>
-                  some test
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  some other test
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  some test
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  some other test
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  some test
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  some other test
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-        </div>
-      </div>
-    </div>
-  </base-section>
+  <v-card color="transparent" elevation="0" class="px-6 pt-8">
+    <v-card-title class="flex-column align-start">
+      <h4 class="black--text">Projects</h4>
+      <div class="card-element-separator mt-4 mb-8"></div>
+    </v-card-title>
+    <v-card-text>
+      <v-container class="pa-0" fluid>
+        <v-row>
+          <v-col cols="12" lg="6">
+            <v-card>
+              <v-img :src="require('@/assets/ja.png')" height="200px" contain></v-img>
+              <v-card-title>Naslov kartice</v-card-title>
+              <v-card-subtitle>neki podnaslov</v-card-subtitle>
+              <v-card-text>ovdje je opis</v-card-text>
+              <v-card-actions>
+                <v-btn>clickme</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col cols="12" lg="6">
+            <v-card>as</v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
 export default {
-  name: 'FourOhFour',
+  name: 'About',
 
   provide: {
-    heading: { align: 'center' }
-  }
+    heading: { align: 'center' },
+  },
 };
 </script>

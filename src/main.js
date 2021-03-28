@@ -1,17 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import vuetify from './plugins/vuetify'
-import './plugins'
+import Vue from 'vue';
+import App from './App.vue';
+import vuetify from './plugins/vuetify';
+import router from './router';
+import './plugins';
+import './sass/overrides.scss';
 
-// STYLES
-// Main Theme SCSS
-import './assets/scss/theme.scss'
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
-  router,
   vuetify,
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount('#app');

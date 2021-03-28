@@ -1,7 +1,7 @@
 // Utilities
 import { camelCase, upperFirst } from 'lodash';
 
-export default function(sections = []) {
+export default function (sections = []) {
   return {
     name: 'LoadSections',
 
@@ -16,6 +16,6 @@ export default function(sections = []) {
       return acc;
     }, {}),
 
-    data: () => ({ sections })
+    data: () => ({ sections }),
   };
 }

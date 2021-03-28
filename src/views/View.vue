@@ -1,16 +1,27 @@
 <template>
-  <full-page id="fullpage" ref="fullpage" :options="options">
-    <div id="section0" class="section"></div>
-    <div v-for="(section, i) in sections" :id="`section${i + 1}`" :key="section" class="section">
-      <section :id="id">
+  <v-container class="ma-0 pa-0">
+    <full-page v-if="windowSizeLogic" id="fullpage" ref="fullpage" :options="options">
+      <div id="section0" class="section"></div>
+      <div v-for="(section, i) in sections" :id="`section${i + 1}`" :key="section" class="section height-100vh">
+        <section :id="id" class="height-100vh">
+          <v-row align="center height-100vh" no-gutters>
+            <v-col cols="12" class="pr-6">
+              <component :is="`section-${section}`" />
+            </v-col>
+          </v-row>
+        </section>
+      </div>
+    </full-page>
+    <div v-for="(section, i) in sections" v-else :id="`section${i + 1}`" :key="section" class="section">
+      <base-section :id="id">
         <v-row no-gutters>
           <v-col cols="12">
             <component :is="`section-${section}`" />
           </v-col>
         </v-row>
-      </section>
+      </base-section>
     </div>
-  </full-page>
+  </v-container>
 </template>
 
 <script>
@@ -22,8 +33,8 @@ export default {
   props: {
     id: {
       type: String,
-      default: 'view'
-    }
+      default: 'view',
+    },
   },
 
   data: () => ({
@@ -31,11 +42,19 @@ export default {
     options: {
       licenseKey: 'DAjn3?ebi-s4-z45t1t0m',
       // menu: '#fp-nav',
+      scrollOverflow: true,
       navigation: true,
       anchors: ['', 'about', 'projects', 'skills', 'portfolio', 'contact'],
-      sectionsColor: ['', '#41b883', '#ff5f45', '#0798ec', '#41b883', '#ff5f45', '#0798ec']
-    }
+      sectionsColor: ['', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8'],
+    },
   }),
+
+  computed: {
+    windowSizeLogic: function () {
+      if (this.$vuetify.breakpoint.mdAndUp && this.$vuetify.breakpoint.height >= 800) return true;
+      return false;
+    },
+  },
 
   created() {
     const setup = setInterval(() => {
@@ -44,7 +63,7 @@ export default {
         clearInterval(setup);
       }
     }, 200);
-  }
+  },
 };
 </script>
 
@@ -52,9 +71,9 @@ export default {
 #fullpage {
   pointer-events: none;
   position: absolute;
-  left: 50%;
+  left: 0;
   top: 0;
-  width: 50vw;
+  width: 100%;
 }
 
 #fullpage > div:not(#section0) {
