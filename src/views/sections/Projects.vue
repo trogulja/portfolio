@@ -9,7 +9,7 @@
         <v-row>
           <v-col cols="12" lg="6">
             <v-card class="transparent project-card" elevation="0">
-              <v-img :src="require('@/assets/marvin-mockup.png')" height="200px"></v-img>
+              <v-img :src="require('@/assets/marvin-mockup.jpg')" height="200px"></v-img>
               <v-card-title>Naslov kartice</v-card-title>
               <v-card-subtitle>neki podnaslov</v-card-subtitle>
               <v-card-text>ovdje je opis</v-card-text>
@@ -19,7 +19,15 @@
             </v-card>
           </v-col>
           <v-col cols="12" lg="6">
-            <v-card>as</v-card>
+            <v-card class="transparent project-card" elevation="0">
+              <v-img :src="require('@/assets/skillsplatform-mockup.jpg')" height="200px"></v-img>
+              <v-card-title>Naslov kartice</v-card-title>
+              <v-card-subtitle>neki podnaslov</v-card-subtitle>
+              <v-card-text>ovdje je opis</v-card-text>
+              <v-card-actions>
+                <v-btn>clickme</v-btn>
+              </v-card-actions>
+            </v-card>
           </v-col>
         </v-row>
       </v-container>
