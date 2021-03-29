@@ -1,24 +1,43 @@
-# ja2
+# Personal folio site
+here be some code for personal site - still under construction
 
-## Project setup
-```
+## Build Setup
+VueJS + Vuetify static website.
+
+
+```bash
+# install dependencies
 yarn install
-```
 
-### Compiles and hot-reloads for development
-```
+# serve with hot reload at localhost:8080
 yarn serve
-```
 
-### Compiles and minifies for production
-```
+# run linter
+yarn lint
+
+# build for production
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## ToDo
+- [x] base
+  - [x] bg image
+  - [x] particles
+- [x] left side
+  - [x] slide0 version
+  - [x] slide+ version
+- [ ] right side
+  - [ ] about me / who am i
+  - [ ] contact
+    - [ ] google maps location
+  - [ ] projects
+    - [ ] Marvin
+    - [ ] SkillsPlatform
+    - [ ] Parserly
+    - [ ] Compiley
+    - [ ] FolderWatchNotify
+    - [ ] lePanel
+  - [ ] timeline portfolio
+    - [ ] color coded
+    - [ ] printable resume
+      - [ ] single html page
