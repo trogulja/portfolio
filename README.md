@@ -30,13 +30,13 @@ yarn build
   - [ ] about me / who am i
   - [ ] contact
     - [ ] google maps location
-  - [ ] projects
-    - [ ] Marvin
-    - [ ] SkillsPlatform
-    - [ ] Parserly
-    - [ ] Compiley
-    - [ ] FolderWatchNotify
-    - [ ] lePanel
+  - [x] projects
+    - [x] Marvin
+    - [x] SkillsPlatform
+    - [x] Parserly
+    - [x] Compiley
+    - [x] FolderWatchNotify
+    - [x] lePanel
   - [ ] timeline portfolio
     - [ ] color coded
     - [ ] printable resume

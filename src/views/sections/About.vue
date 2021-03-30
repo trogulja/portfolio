@@ -24,9 +24,5 @@
 <script>
 export default {
   name: 'About',
-
-  provide: {
-    heading: { align: 'center' },
-  },
 };
 </script>

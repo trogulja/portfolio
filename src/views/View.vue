@@ -3,8 +3,8 @@
     <full-page v-if="windowSizeLogic" id="fullpage" ref="fullpage" :options="options">
       <div id="section0" class="section"></div>
       <div v-for="(section, i) in sections" :id="`section${i + 1}`" :key="section" class="section height-100vh">
-        <section :id="id" class="height-100vh">
-          <v-row align="center height-100vh" no-gutters>
+        <section :id="id" class="height-100vhmin">
+          <v-row align="center" class="height-100vhmin" no-gutters>
             <v-col cols="12" class="pr-6">
               <component :is="`section-${section}`" />
             </v-col>
