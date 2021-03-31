@@ -1,40 +1,48 @@
 <template>
   <v-main>
-    <Particles id="tsparticles" :particles-init="particlesInit" :particles-loaded="particlesLoaded" :options="tsparticles" />
     <v-container class="pa-0" fluid>
       <v-row class="ma-0 pa-0" no-gutters>
         <v-col :cols="windowSizeLogic" class="ma-0 pa-0">
-          <v-container class="height-100vh d-flex flex-column pa-0" fluid>
-            <v-container class="height-100vh about-me align-self-center px-1 d-flex flex-column" fluid>
-              <v-spacer />
-              <v-card color="transparent" elevation="0" dark>
-                <v-card-text>
-                  <v-img id="tiborimage" :src="require('@/assets/ja.png')" class="mx-auto mb-12" contain height="350" width="250" />
-                  <h1 class="mb-6 white--text">Hi, I'm Tibor.</h1>
-                  <p class="white--text">A Full-Stack Developer from Zagreb, Croatia with a degree in marketing and a broad set of various skills.</p>
-                  <p class="white--text">I solve problems.</p>
-                  <v-btn class="mt-6" color="primary white--text" x-large @click="explore()">
-                    Explore
-                    <span class="ask-to-scroll">
-                      <span class="arrow"><span></span><span></span></span>
-                      <span class="arrow"><span></span><span></span></span>
-                      <span class="arrow"><span></span><span></span></span>
-                    </span>
-                  </v-btn>
-                </v-card-text>
-              </v-card>
-              <v-spacer />
-              <v-card color="transparent" elevation="0" dark>
-                <v-card-actions>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.linkedin.com/in/trogulja/" target="_blank"><v-icon color="white">mdi-linkedin</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.facebook.com/tibor.rogulja" target="_blank"><v-icon color="white">mdi-facebook</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://twitter.com/trogulja" target="_blank"><v-icon color="white">mdi-twitter</v-icon></v-btn>
-                  <v-btn small color="transparent" elevation="0" class="py-6" href="https://www.instagram.com/thornycro/" target="_blank"><v-icon color="white">mdi-instagram</v-icon></v-btn>
-                  <v-spacer />
-                </v-card-actions>
-              </v-card>
+          <div id="particleAncestor">
+            <Particles id="tsparticles" :particles-init="particlesInit" :particles-loaded="particlesLoaded" :options="tsparticles" />
+            <v-container class="d-flex flex-column pa-0 no-mouse" :class="windowSizeLogic === 6 ? 'height-100vh' : ''" fluid>
+              <v-container class="about-me align-self-center px-1 d-flex flex-column" :class="windowSizeLogic === 6 ? 'height-100vh' : ''" fluid>
+                <v-spacer />
+                <v-card color="transparent" elevation="0" dark>
+                  <v-card-text>
+                    <v-img id="tiborimage" :src="require('@/assets/ja.png')" class="mx-auto mb-12" contain height="350" width="250" />
+                    <h1 class="mb-6 white--text">Hi, I'm Tibor.</h1>
+                    <p class="white--text">A Full-Stack Developer from Zagreb, Croatia with a degree in marketing and a broad set of various skills.</p>
+                    <p class="white--text">I solve problems.</p>
+                    <v-btn class="mt-6 yes-mouse" color="primary white--text" x-large @click="explore()">
+                      Explore
+                      <span class="ask-to-scroll">
+                        <span class="arrow"><span></span><span></span></span>
+                        <span class="arrow"><span></span><span></span></span>
+                        <span class="arrow"><span></span><span></span></span>
+                      </span>
+                    </v-btn>
+                  </v-card-text>
+                </v-card>
+                <v-spacer />
+                <v-card color="transparent" elevation="0" dark>
+                  <v-card-actions>
+                    <v-btn small color="transparent" elevation="0" class="py-6 yes-mouse" href="https://www.linkedin.com/in/trogulja/" target="_blank"
+                      ><v-icon color="white">mdi-linkedin</v-icon></v-btn
+                    >
+                    <v-btn small color="transparent" elevation="0" class="py-6 yes-mouse" href="https://www.facebook.com/tibor.rogulja" target="_blank"
+                      ><v-icon color="white">mdi-facebook</v-icon></v-btn
+                    >
+                    <v-btn small color="transparent" elevation="0" class="py-6 yes-mouse" href="https://twitter.com/trogulja" target="_blank"><v-icon color="white">mdi-twitter</v-icon></v-btn>
+                    <v-btn small color="transparent" elevation="0" class="py-6 yes-mouse" href="https://www.instagram.com/thornycro/" target="_blank"
+                      ><v-icon color="white">mdi-instagram</v-icon></v-btn
+                    >
+                    <v-spacer />
+                  </v-card-actions>
+                </v-card>
+              </v-container>
             </v-container>
-          </v-container>
+          </div>
         </v-col>
         <v-col :cols="windowSizeLogic" class="ma-0 pa-0">
           <router-view />
@@ -170,6 +178,18 @@ export default {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+}
+
+#particleAncestor {
+  position: relative;
+}
+
+.no-mouse {
+  pointer-events: none;
+}
+
+.yes-mouse {
+  pointer-events: all;
 }
 </style>

@@ -1,14 +1,14 @@
 <template>
   <v-card color="transparent" elevation="0" class="px-6 pt-8">
-    <v-card-title class="flex-column align-start">
+    <v-card-title class="flex-column align-start custom-section-title align-self-stretch">
       <h4 class="black--text">Projects</h4>
       <div class="card-element-separator mt-4 mb-8"></div>
     </v-card-title>
     <v-card-text>
       <v-container class="pa-0" fluid>
         <v-row>
-          <v-col v-for="(project, index) in projects" :key="`project-${index}`" cols="12" lg="6">
-            <v-card :class="`project-card ${project.class}`" elevation="0" dark>
+          <v-col v-for="(project, index) in projects" :key="`project-${index}`" cols="12" lg="6" class="d-flex align-center justify-center">
+            <v-card :class="`project-card ${project.class}`" elevation="0" dark max-width="360px">
               <v-img :src="require(`@/assets/${project.image}`)" height="200px"></v-img>
               <v-card-title>{{ project.title }}</v-card-title>
               <v-card-subtitle>{{ project.subtitle }}</v-card-subtitle>

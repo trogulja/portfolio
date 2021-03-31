@@ -10,7 +10,7 @@
           Here you can download my resume in either PDF or Word format. I'd recommend PDF because Word is known to pull a fast one across different versions. But hey... we all know and love Word's
           quirkyness. 😅
         </p>
-        <div>
+        <div class="d-block text-center">
           <v-btn x-large text class="ma-4" href="resume.pdf" target="_blank">
             <v-icon x-large color="greenDark">mdi-file-pdf</v-icon>
             pdf

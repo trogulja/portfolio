@@ -15,7 +15,7 @@
     <div v-for="(section, i) in sections" v-else :id="`section${i + 1}`" :key="section" class="section">
       <base-section :id="id">
         <v-row no-gutters>
-          <v-col cols="12">
+          <v-col cols="12" class="d-flex align-center justify-center">
             <component :is="`section-${section}`" />
           </v-col>
         </v-row>

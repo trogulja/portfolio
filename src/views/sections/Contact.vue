@@ -1,10 +1,10 @@
 <template>
   <v-card color="transparent" elevation="0" class="px-6 pt-8">
-    <v-card-title class="flex-column align-start">
+    <v-card-title class="flex-column align-start custom-section-title align-self-stretch">
       <h4 class="black--text">Contact</h4>
       <div class="card-element-separator mt-4 mb-8"></div>
     </v-card-title>
-    <v-card-text class="d-flex align-center justify-center py-16">
+    <v-card-text class="d-flex align-center justify-center py-16 align-self-stretch">
       <beautiful-chat
         id="chatBox"
         :participants="participants"

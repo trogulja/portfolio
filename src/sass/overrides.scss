@@ -88,5 +88,26 @@ h6 {
   background-color: #fff;
 }
 
+.custom-section-title {
+  max-width: 552px;
+  margin: auto;
+}
+
+.special-width {
+  max-width: 520px;
+}
+.width-100 {
+  width: 100%;
+}
+.v-responsive__content {
+  width: auto !important;
+}
+
+html,
+body,
+#app {
+  background-color: $white !important;
+}
+
 @import 'fullpage';
 @import 'asktoscroll';

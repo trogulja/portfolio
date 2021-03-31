@@ -24,11 +24,11 @@
         everyone. Or when I manage to fix something and others are like: "How did you..."
       </p>
       <v-row class="mt-8">
-        <v-col cols="6">
-          <v-img :src="require('@/assets/about1.jpg')" class="elevation-12"></v-img>
+        <v-col cols="12" md="6">
+          <v-img :src="require('@/assets/about1.jpg')" class="elevation-12" :aspect-ratio="5 / 6" min-width="150"></v-img>
         </v-col>
-        <v-col cols="6">
-          <v-img :src="require('@/assets/about2.jpg')" class="elevation-12"></v-img>
+        <v-col cols="12" md="6">
+          <v-img :src="require('@/assets/about2.jpg')" class="elevation-12" :aspect-ratio="5 / 6" min-width="150"></v-img>
         </v-col>
       </v-row>
       <div></div>
