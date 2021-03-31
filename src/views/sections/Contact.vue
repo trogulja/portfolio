@@ -90,9 +90,13 @@ export default {
         { match: /what is love/, response: 'haddaway' },
         { match: /(hi|hello|hey|howdy)/, response: 'greet' },
         { match: /^how (are|is) (u|you|tibor)/, response: 'greet2' },
+        { match: /new .+(site|web)/, response: 'newweb' },
         { match: /email|contact|job|work/, response: 'contact' },
-        { match: /weather/, response: 'weather' },
+        { match: /weather|rain|wind|snow|hale/, response: 'weather' },
+        { match: /vakula|zoran/, response: 'vakula' },
+        { match: /[ha]{4,}|[hi]{4,}/, response: 'laff' },
         { match: /^what is/, response: 'stupidQuestion' },
+        { match: /test/, response: 'test' },
       ],
       botResponse: {
         greet: [
@@ -147,6 +151,10 @@ export default {
           '...',
           '...',
         ],
+        vakula: [`Vakula, akula, kula, ula, la and small a... Have you seen him on telly last night? He got the weather wrong again!`],
+        newweb: [`Yea, this is my new web! It took some doing, but it's finally done!`],
+        laff: [`It's really healthy to laugh`, `This was awesome, we should do it more often!`, `Heh, nice one... You know laughter. But do you know what is love?`],
+        test: ['Yes, this is a great test. You would be a great tester.'],
         haddaway: [`Oh baby, don't hurt me, don't hurt me, no more... 🎵`],
         stupidQuestion: [
           'Have you tried googling it?',
