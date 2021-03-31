@@ -12,7 +12,7 @@ export default {
 
   extends: View,
 
-  mixins: [LoadSections(['about', 'projects', 'skills', 'portfolio', 'contact'])],
+  mixins: [LoadSections(['about', 'projects', 'resume', 'contact'])],
 
   props: {
     id: {

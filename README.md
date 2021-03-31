@@ -1,5 +1,5 @@
 # Personal folio site
-here be some code for personal site - still under construction
+here be some code for personal site - it's live on https://rogulja.info/
 
 ## Build Setup
 VueJS + Vuetify static website.
@@ -26,10 +26,8 @@ yarn build
 - [x] left side
   - [x] slide0 version
   - [x] slide+ version
-- [ ] right side
-  - [ ] about me / who am i
-  - [ ] contact
-    - [ ] google maps location
+- [x] right side
+  - [x] about me / who am i
   - [x] projects
     - [x] Marvin
     - [x] SkillsPlatform
@@ -37,7 +35,5 @@ yarn build
     - [x] Compiley
     - [x] FolderWatchNotify
     - [x] lePanel
-  - [ ] timeline portfolio
-    - [ ] color coded
-    - [ ] printable resume
-      - [ ] single html page
+  - [x] resume
+  - [x] contact

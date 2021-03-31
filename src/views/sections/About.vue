@@ -1,5 +1,5 @@
 <template>
-  <v-card color="transparent" elevation="0" class="px-6 pt-8">
+  <v-card color="transparent" elevation="0" class="px-6 pt-8" max-width="600">
     <!-- <v-card-subtitle>
       <h6 class="black--text">About me</h6>
     </v-card-subtitle> -->
@@ -8,15 +8,30 @@
       <div class="card-element-separator mt-4 mb-8"></div>
     </v-card-title>
     <v-card-text>
-      <p class="black--text">
-        Lorem ipsum Dolor elit dolor laboris in enim ex ex deserunt consequat irure eu commodo mollit anim minim tempor Excepteur pariatur sit ut voluptate amet eiusmod aute et occaecat incididunt
-        aute sit cupidatat dolore enim proident!<br /><br />
-
-        Laboris est dolor commodo ullamco in reprehenderit sit tempor nisi nulla in ex deserunt esse ullamco dolore nostrud pariatur magna cillum commodo nisi sunt mollit elit aliquip eu sunt irure
-        sint enim in <strong>Duis ullamco elit Duis veniam ex esse labore</strong> ex fugiat aute nostrud ullamco est laborum aliqua Duis eiusmod nostrud consequat pariatur eiusmod in culpa laboris
-        dolore qui magna irure non veniam ut cillum nisi commodo enim eiusmod aute ex in officia amet proident irure dolore Ut qui aliquip labore ea tempor amet culpa irure nulla consectetur sed
-        <i>proident cillum voluptate cillum</i> cillum consectetur occaecat tempor commodo incididunt aute aliquip sunt eu id deserunt magna sint sint nostrud cupidatat.
+      <p class="black--text text-justify mb-5">
+        I'm a father to a 2 year old and husband to a wonder-woman, living in Zagreb, Croatia. I work at a international publishing company, handling wide variety of tasks. My job is a weird mix of
+        graphic editor meets developer meets research and development.
+        <br /><br />
+        I would like to think of myself as well organised person, independent in my work with high attention to the detail. That last part, with a dash of OCD (honestly, it should really be sorted
+        alphabetically: CDO) is what causes me most headache. I really want the things that I build to be their best version, but there's never enough time for it.
+        <br /><br />
+        I really like to contribute to the light atmosphere by joking often, even though my repertoire nowadays is mostly dad jokes. Which I really love. Not sure why. Oh, wait.
+        <br /><br />
+        My experience is really wide, covering most of the things you would see in a marketing agency being done, but also in photography business, in teachings, in publishing business and in IT
+        sector. IT is something I really hold dear, seeing how I'm the go-to-guy when something isn't working.
+        <br /><br />
+        I'm interested in furthering this developer story of mine. There's this special satisfaction when things come together and work. Or when I manage to automate things and save a ton of time for
+        everyone. Or when I manage to fix something and others are like: "How did you..."
       </p>
+      <v-row class="mt-8">
+        <v-col cols="6">
+          <v-img :src="require('@/assets/about1.jpg')" class="elevation-12"></v-img>
+        </v-col>
+        <v-col cols="6">
+          <v-img :src="require('@/assets/about2.jpg')" class="elevation-12"></v-img>
+        </v-col>
+      </v-row>
+      <div></div>
     </v-card-text>
   </v-card>
 </template>

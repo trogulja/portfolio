@@ -5,7 +5,7 @@
       <div v-for="(section, i) in sections" :id="`section${i + 1}`" :key="section" class="section height-100vh">
         <section :id="id" class="height-100vhmin">
           <v-row align="center" class="height-100vhmin" no-gutters>
-            <v-col cols="12" class="pr-6">
+            <v-col cols="12" class="pr-6 align-center justify-center d-flex">
               <component :is="`section-${section}`" />
             </v-col>
           </v-row>
@@ -44,8 +44,8 @@ export default {
       // menu: '#fp-nav',
       scrollOverflow: true,
       navigation: true,
-      anchors: ['', 'about', 'projects', 'skills', 'portfolio', 'contact'],
-      sectionsColor: ['', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8'],
+      anchors: ['', 'about', 'projects', 'resume', 'contact'],
+      sectionsColor: ['', '#d5d9b8', '#d5d9b8', '#d5d9b8', '#d5d9b8'],
     },
   }),
 
